@@ -1,0 +1,32 @@
+# this is a file for testing the API 
+
+
+
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5e836fdbd50154dcc6b99a0e
+
+####
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": " John Doe",
+    "subscribedToChannel": "yes"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5e836fdbd50154dcc6b99a0e
+
+###
+
+PATCH http://localhost:3000/subscribers/5e836ff4d50154dcc6b99a0f
+Content-Type: application/json
+
+{
+    "name" : "jane doe"
+}
